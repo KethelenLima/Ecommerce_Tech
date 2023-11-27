@@ -1,0 +1,144 @@
+/*----------Imports----------*/
+@import "variables";
+
+/*----------resset----------*/
+figure {
+  margin: 0;
+}
+
+
+/*----------categorias imgs----------*/
+.container-category {
+  margin: 70px 40px;
+}
+
+.header-category {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: auto;
+
+  .text-h2 {
+    color: $primery-color;
+    font-size: 24px;
+    font-weight: 500;
+  }
+
+  .header-flex {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .button-see-all {
+    text-decoration: none;
+    color: $primery-color;
+    font-size: 14px;
+    padding: 0 5px;
+    margin: 0;
+  }
+
+  i {
+    color: $primery-color;
+    font-size: 16px;
+
+    padding: 5px;
+  }
+}
+
+/*--image--*/
+.box-container-category {
+  display: flex;
+  justify-content: space-between;
+
+  max-width: 1440px;
+  margin: 30px auto;
+
+  .box-category {
+    width: 162px;
+    margin: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    .container-img {
+      position: relative;
+  
+      .mini-banner {
+        position: absolute;
+  
+        padding: 0;
+        bottom: 5px;
+        left: 0px;
+        transition: 0.5s;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  
+    .bg-category {
+      width: 140px;
+      height: 140px;
+      background-color: $light-gray-color;
+      border-radius: 50%;
+    }
+  
+    .text-p-category {
+      text-align: center;
+      margin: 0;
+      padding: 10px 0;
+
+      font-size: 14px;
+      color: $gray-color;
+    }
+  }
+}
+
+/*--------------------Mobile--------------------*/
+
+/*--max-width--*/
+@media(max-width: 1276px) {
+  #category-06 {
+    display: none;
+  }
+}
+
+@media(max-width: 1076px) {
+  #category-05 {
+    display: none;
+  }
+}
+
+@media(max-width: 846px) {
+  #category-04 {
+    display: none;
+  }
+}
+
+@media(max-width: 586px) {
+  #category-03 {
+    display: none;
+  }
+
+  .box-category {
+    margin: 10px;
+  }
+
+  // .bg-category {
+  //   width: 102px;
+  //   height: 102px;
+  // }
+
+  // .mini-banner {
+  //   padding: 0;
+  //   bottom: 5px;
+  //   left: 0px;
+  //   transition: 0.5s;
+  // }
+    
+  .container-category {
+    margin: 70px 20px;
+  }
+}

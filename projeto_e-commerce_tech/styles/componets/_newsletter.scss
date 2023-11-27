@@ -1,0 +1,48 @@
+/*----------Imports----------*/
+@import "variables";
+
+/*----------resset----------*/
+figure {
+  margin: 0;
+}
+
+
+/*----------newsletter----------*/
+.container-newsletter {
+  height: 268px;
+  background-position: center;
+  background-image: url("../assets/img-newsletter.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .box-info-newsletter {
+    padding: 60px;
+
+    h3, p {
+      color: $white-color;
+      text-align: center;
+    }
+
+    h3 {
+      margin: 0 0 14px 0;
+    }
+
+    p {
+      margin: 0 0 30px 0;
+    }
+  }
+
+  .btn-newsletter {
+    padding: 8px 16px;
+    width: 74px;
+
+    position: absolute;
+    top: 4px;
+    right: 5px;
+  }
+
+  .margin-newsletter {
+    margin: auto;
+  }
+
+}

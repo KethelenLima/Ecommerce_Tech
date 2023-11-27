@@ -1,0 +1,85 @@
+/*----------Imports----------*/
+@import "componets/global";
+
+/*----------Font family----------*/
+body {
+  font-family: 'inter', sans-serif;
+}
+
+main {
+  margin: 98px auto 0 auto;
+}
+
+/*----------mini banners----------*/
+
+.container-mini-banner {
+  display: flex;
+  justify-content: center;
+  margin: 22px;
+}
+
+.mini-banner {
+  padding: 20px;
+  max-width: 100%;
+  height: auto;
+}
+
+/*----------grid banners----------*/
+.container-grid-imgs {
+  margin: $container-margin;
+  display: flex;
+  justify-content: center;
+
+  .img-grid-center {
+    margin: 0 20px;
+  }
+
+  .flex-grid-line{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .img-cursor {
+    cursor: pointer;
+  }
+}
+
+/*----------brands----------*/
+.container-brands {
+  width: $container-width;
+  margin: 70px auto;
+
+  .flex-brands {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+  }
+
+  .img-cursor {
+    cursor: pointer;
+  }
+}
+
+/*--------------------Mobile--------------------*/
+
+/*--max-width--*/
+@media(max-width: 806px) {
+  .container-mini-banner {
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+}
+
+@media(max-width: 1246px) {
+  .mini-banner {
+    padding: 10px;
+  }
+}
+
+@media(max-width: 1046px) {
+  .container-mini-banner {
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+}
